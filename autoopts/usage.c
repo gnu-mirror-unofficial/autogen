@@ -40,6 +40,8 @@
 #define GRAPH_CH(_ch) \
     ((((unsigned)_ch) <= 0x7E) && (((unsigned)_ch) > ' '))
 
+FILE * option_usage_fp;
+
 /**
  * Parse the option usage flags string.  Any parsing problems yield
  * a zero (no flags set) result.  This function is internal to

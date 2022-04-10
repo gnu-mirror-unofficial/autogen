@@ -408,7 +408,7 @@ extern char * strrchr(char const * s, int c);
 /**
  *  File pointer for usage output
  */
-FILE * option_usage_fp;
+extern FILE * option_usage_fp;
 /**
  *  If provided in the option structure
  */
