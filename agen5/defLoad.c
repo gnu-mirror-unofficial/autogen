@@ -470,7 +470,7 @@ read_defs(void)
      */
     {
         size_t sz = data_sz + sizeof(long) + sizeof(*base_ctx);
-        base_ctx = (scan_ctx_t *)AGALOC(rsz, "file buf");
+        base_ctx = (scan_ctx_t *)AGALOC(sz, "file buf");
         memset(VOIDP(base_ctx), 0, sz);
     }
     base_ctx->scx_line = 1;
